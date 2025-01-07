@@ -127,6 +127,12 @@ $admin= Auth::guard('admin')->user();
                                     <span key="t-dashboards">Hospitals</span>
                                 </a>
                             </li>
+                            <li>
+                            <a href="{{route('other-feature')}}">
+                                <i class="bx bx-file"></i>
+                                <span key="t-dashboards">Other Option</span>
+                            </a>
+                         </li>
                     </ul>
                 </li>
 

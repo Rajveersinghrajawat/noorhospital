@@ -19,7 +19,7 @@ use App\Http\Controllers\admin\HospitalController;
 use App\Http\Controllers\admin\HospitalL2Controller;
 use App\Http\Controllers\admin\Doctorl2Controller;
 use App\Http\Controllers\admin\Galleryl2Controller;
-
+use App\Http\Controllers\admin\otherFeatureController;
 
 use App\Http\Controllers\admin\TestimonialController;
 use App\Http\Controllers\admin\EnqueryController;
@@ -33,6 +33,7 @@ use App\Http\Controllers\admin\ServiceController;
 use App\Http\Controllers\admin\ProcedureController;
 use App\Http\Controllers\admin\VideoTestimonialController;
 use App\Http\Controllers\admin\BlogController;
+
 use App\Http\Controllers\admin\PermissionController;
 use App\Http\Controllers\frontend\HomeController;
 use App\Http\Controllers\frontend\WebPageController;
@@ -225,6 +226,15 @@ Route::group(['prefix' => 'admin', 'middleware' => 'ifadmin'], function () {
     Route::any('/feature-data', [FeatureController::class, 'anydata'])->name('feature_data');
     Route::get('/feature/delete', [FeatureController::class, 'delete'])->name('feature_delete');
     Route::get('/feature/status', [FeatureController::class, 'changeStatus'])->name('feature_status');
+    /*-----------------------Admin feature routes End---------------------*/
+
+    /*---------------------Admin feature routes Start---------------------*/
+    Route::get('/l2/other-feature/add/{id?}', [otherFeatureController::class, 'add'])->name('other_feature_add');
+    Route::post('/l2/other-feature/save/{id?}', [otherFeatureController::class, 'save'])->name('other_feature_save');
+    Route::get('/l2/other-feature', [otherFeatureController::class, 'index'])->name('other-feature');
+    Route::any('/l2/other-feature-data', [otherFeatureController::class, 'anydata'])->name('other_feature_data');
+    Route::get('/l2/other-feature/delete', [otherFeatureController::class, 'delete'])->name('other_feature_delete');
+    Route::get('/l2/other-feature/status', [otherFeatureController::class, 'changeStatus'])->name('other_feature_status');
     /*-----------------------Admin feature routes End---------------------*/
 
     /*---------------------Admin banner routes Start---------------------*/
