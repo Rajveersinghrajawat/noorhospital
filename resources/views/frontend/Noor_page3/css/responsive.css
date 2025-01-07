@@ -1,0 +1,43 @@
+@media screen and (max-width:576px) {
+
+    h1 {
+        font-size: 23px;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+
+    .rating-box {
+        text-align: center !important;
+    }
+
+    .ind-img {
+        width: 30px;
+    }
+
+    h5 {
+        font-size: 18px !important;
+    }
+
+    p {
+        text-align: justify;
+    }
+    .top-bar{
+        font-size: 25px;
+    }
+    .top-bar span{
+        display: none;
+    }
+}
+
+@media screen and (max-width:992px) {
+
+    .logo {
+        text-align: center;
+    }
+
+}

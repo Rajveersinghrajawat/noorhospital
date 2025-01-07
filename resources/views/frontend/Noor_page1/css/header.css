@@ -1,0 +1,89 @@
+.header-bg {
+  background-image: url(assets/images/ortho-bg-banner-img.jpg) !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  /* background: linear-gradient(90deg, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0.00) 100%), lightgray 50% / cover no-repeat; */
+  /* border: 2px solid #F7F8FC !important; */
+  padding: 2%;
+  background-size: cover;
+}
+
+.why-choose-section {
+  background-image: url(assets/images/whychoose.png) !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  padding: 2%;
+  background-size: cover;
+  border-radius: 6px;
+  /* background: #008FC5; */
+  /* margin: 30px;
+        padding: 20px; */
+  box-shadow: 0px 0px 5px 5px #008fc5;
+}
+
+.why-choose-box1 {
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+}
+
+.why-choose-box2 {
+  border-bottom: 1px solid #fff;
+}
+
+.why-choose-box3 {
+  border-right: 1px solid #fff;
+}
+
+@media (max-width: 575px) {
+  .why-choose-box1 {
+    border-bottom: none;
+    border-right: none;
+  }
+
+  .why-choose-box2 {
+    border-bottom: none;
+  }
+
+  .why-choose-box3 {
+    border-right: none;
+  }
+}
+
+.how-does-robotic-section {
+  border-radius: 6px;
+  box-shadow: 0px 0px 5px 5px #008fc5;
+  background-color: #008fc5;
+}
+
+#whatsIcon {
+  width: 50px !important;
+  height: 50px !important;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#whatsIcon a i {
+  color: #fff;
+  font-size: 20px;
+}
+
+#slider_front .carousel-indicators {
+  bottom: -40px;
+  gap: 5px;
+}
+
+#slider_front .carousel-indicators [data-bs-target] {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+}
+
+#slider_front .carousel-control-prev {
+  left: -50px;
+}
+
+#slider_front .carousel-control-next {
+  right: -40px;
+}

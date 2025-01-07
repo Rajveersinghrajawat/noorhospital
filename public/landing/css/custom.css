@@ -1,0 +1,192 @@
+* .theme-text-color {
+    color: #0a2134;
+}
+
+/* Style the header: fixed position (always stay at the top) */
+.header {
+    position: fixed;
+    bottom: 0;
+    z-index: 9999;
+    width: 100%;
+    background-color: #f1f1f1;
+}
+
+/* The progress container (grey background) */
+.progress-container {
+    width: 100%;
+    height: 6px;
+    background: #f1f1f1;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+    height: 6px;
+    background: #6c9914;
+    width: 1%;
+}
+
+
+.bg-section {
+    background-color: #f8f9f9;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.ind-img {
+    width: 50px;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 700;
+}
+
+.btn-action {
+    background-color: #6c9914;
+    color: white;
+}
+
+.btn-action:hover {
+    border-color: #6c9914;
+}
+
+.services {
+    transition: 0.5s;
+    box-shadow: 0px 0px 1px #6c9914;
+    user-select: none;
+}
+
+.services:hover {
+    background: #6c9914 !important;
+    color: white;
+}
+
+.book-now {
+    width: 100%;
+}
+
+.required::after {
+    content: " *";
+    color: red;
+}
+
+.form-section {
+    position: fixed;
+    right: 0;
+    top: 8%;
+}
+
+.rating-box * {
+    font-size: 20px;
+}
+
+.rating-box span {
+    font-size: 14px;
+}
+
+.rating-box i {
+    color: gold;
+    margin: 0 1px;
+}
+
+.pointer-box {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.pointer-item .box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.pointer-item p {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.pointer-item .box i {
+    font-size: 10px;
+    color: #6c9914;
+}
+
+.bullet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-focus {
+    animation: shake infinite 0.1s linear alternate;
+}
+
+@keyframes shake {
+    from {
+        transform: rotate(-1deg);
+    }
+
+    to {
+        transform: rotate(1deg);
+    }
+}
+
+a {
+    text-decoration: inherit !important;
+    font-family: inherit !important;
+    color: inherit !important;
+    text-transform: inherit !important;
+}
+
+.custom-slider .slider-img-box {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.custom-slider img {
+    height: 400px;
+    transition: 0.3s;
+}
+
+.custom-slider img:hover {
+    transform: scale(1.05, 1.05);
+    filter: grayscale(1);
+}
+
+.custom-slider h5 {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.form-holder {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 999999999;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-sizing: border-box;
+    padding: 10px;
+    display: none;
+}
+.form-holder form{
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+#form-close{
+    color: white;
+    font-size: 30px;
+    margin: 20px;
+    display: block;
+    text-align: right;
+}
+.top-bar{
+    background-color: #283ba1;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    text-align: center;
+}
